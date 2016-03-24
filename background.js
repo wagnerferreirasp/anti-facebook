@@ -1,4 +1,4 @@
 chrome.tabs.getSelected(null, function(tab){
         chrome.tabs.executeScript(tab.id,{code:"document.getElementById('mainContainer').innerHTML = ''"});
 });
-alert("No more news feed!");
+window.close();
